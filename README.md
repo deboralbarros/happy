@@ -121,7 +121,7 @@ ou, caso você tenha instalado o Yarn:
 ```
 yarn install
 ```
-2. Troque o ip que está no arquivo **api.ts**, (mobile/src/services/api.ts) na linha 7, pelo ip da sua máquina.
+2. Troque o ip que está no arquivo **api.ts**, (mobile/src/services/api.ts) na linha 4, pelo ip da sua máquina.
 
 #
 
