@@ -12,31 +12,15 @@ O Happy é uma aplicação com o objetivo de agregar informações sobre Orfanat
 
 #
 
-## 🖼️ Imagens
+## 🖼️ Layout
 
-### <li> 💻 Web
+Você pode conferir o Layout desenvolvido por <a href="https://www.instagram.com/tiagoluchtenberg/">Tiago Luchtenberg</a>, no <a href="https://figma.com">Figma</a>:
 
-![Landing Page](https://github.com/deboralbarros/happy/blob/master/images/landing-page.png)
+<ul>
+<li><a href="https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web">Web</a></li>
 
-![Mapa](https://github.com/deboralbarros/happy/blob/master/images/map.png)
-
-![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/detail-1.png)
-
-![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/detail-2.png)
-
-![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/detail-3.png)
-
-![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/create-orphanage-1.png)
-
-![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/create-orphanage-2.png)
-
-![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/create-orphanage-3.png)
-
-#
-
-### <li> 📱 Mobile
-
-![Splash Screen](https://github.com/deboralbarros/happy/blob/master/images/splash-screen.jpeg)![Mapa](https://github.com/deboralbarros/happy/blob/master/images/mobile-map.jpeg)![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-detail-1.jpeg)![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-detail-2.jpeg)![Selecionar no Mapa](https://github.com/deboralbarros/happy/blob/master/images/selectmap-1.jpeg)![Selecionado no Mapa](https://github.com/deboralbarros/happy/blob/master/images/select-map.jpeg)![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-create-1.jpeg)![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-create-2.jpeg)
+<li><a href="https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Hap/duplicatepy-Mobile">Mobile</a></li>
+</ul>
 
 #
 
