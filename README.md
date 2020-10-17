@@ -36,21 +36,21 @@ O Happy é uma aplicação com o objetivo de agregar informações sobre Orfanat
 
 ### <li> 📱 Mobile
 
-![Splash Screen](https://github.com/deboralbarros/happy/blob/master/images/splash-screen.png)
+![Splash Screen](https://github.com/deboralbarros/happy/blob/master/images/splash-screen.jpeg)
 
-![Mapa](https://github.com/deboralbarros/happy/blob/master/images/mobile-map.png)
+![Mapa](https://github.com/deboralbarros/happy/blob/master/images/mobile-map.jpeg)
 
-![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-detail-1.png)
+![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-detail-1.jpeg)
 
-![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-detail-2.png)
+![Detalhes do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-detail-2.jpeg)
 
-![Selecionar no Mapa](https://github.com/deboralbarros/happy/blob/master/images/selectmap-1.png)
+![Selecionar no Mapa](https://github.com/deboralbarros/happy/blob/master/images/selectmap-1.jpeg)
 
-![Selecionado no Mapa](https://github.com/deboralbarros/happy/blob/master/images/select-map.png)
+![Selecionado no Mapa](https://github.com/deboralbarros/happy/blob/master/images/select-map.jpeg)
 
-![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-create-1.png)
+![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-create-1.jpeg)
 
-![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-create-2.png)
+![Criação do Orfanato](https://github.com/deboralbarros/happy/blob/master/images/mobile-create-2.jpeg)
 
 #
 
