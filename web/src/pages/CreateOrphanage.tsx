@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { LeafletMouseEvent } from "leaflet";
 import { FiPlus } from "react-icons/fi";
@@ -15,12 +15,25 @@ export default function CreateOrphanage() {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
 
   const [name, setName] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
   const [about, setAbout] = useState("");
   const [opening_hours, setOpeningHours] = useState("");
   const [instructions, setInstructions] = useState("");
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
   const [images, setImages] = useState<File[]>([]);
   const [previewImages, setPreviewImages] = useState<string[]>([]);
+  const [initialPoisition, setInitialPosition] = useState<[number, number]>([
+    0,
+    0,
+  ]);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { latitude, longitude } = position.coords;
+
+      setInitialPosition([latitude, longitude]);
+    });
+  }, []);
 
   function handleMapClick(evt: LeafletMouseEvent) {
     const { lat, lng } = evt.latlng;
@@ -37,11 +50,11 @@ export default function CreateOrphanage() {
 
     setImages(selectedImages);
 
-    const selectedImagesPreview = selectedImages.map((image) => {
+    const selectedImagesPreview = [...selectedImages].map((image) => {
       return URL.createObjectURL(image);
     });
 
-    setPreviewImages(selectedImagesPreview);
+    setPreviewImages([...selectedImagesPreview]);
   }
 
   async function handleSubmit(evt: FormEvent) {
@@ -52,6 +65,7 @@ export default function CreateOrphanage() {
     const data = new FormData();
 
     data.append("name", name);
+    data.append("whatsapp", String(whatsapp));
     data.append("about", about);
     data.append("instructions", instructions);
     data.append("opening_hours", opening_hours);
@@ -77,7 +91,7 @@ export default function CreateOrphanage() {
             <legend>Dados</legend>
 
             <Map
-              center={[-2.988981, -60.0143848]}
+              center={initialPoisition}
               style={{ width: "100%", height: 280 }}
               zoom={15}
               onClick={handleMapClick}
@@ -100,6 +114,16 @@ export default function CreateOrphanage() {
                 id="name"
                 value={name}
                 onChange={(evt) => setName(evt.target.value)}
+              />
+            </div>
+
+            <div className="input-block">
+              <label htmlFor="whatsapp">Whatsapp</label>
+              <input
+                id="whatsapp"
+                maxLength={11}
+                value={whatsapp}
+                onChange={(evt) => setWhatsapp(evt.target.value)}
               />
             </div>
 

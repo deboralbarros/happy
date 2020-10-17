@@ -14,6 +14,7 @@ interface Orphanage {
   latitude: number;
   longitude: number;
   name: string;
+  whatsapp: string;
   about: string;
   instructions: string;
   opening_hours: string;
@@ -130,10 +131,14 @@ export default function Orphanage() {
               )}
             </div>
 
-            <button type="button" className="contact-button">
+            <a
+              className="contact-button"
+              href={`https://api.whatsapp.com/send?phone=55${orphanage.whatsapp}`}
+              target="_blank"
+            >
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
-            </button>
+            </a>
           </div>
         </div>
       </main>

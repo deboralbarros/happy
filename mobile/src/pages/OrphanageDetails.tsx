@@ -23,6 +23,7 @@ interface OrphanageDetailsRouteParms {
 interface Orphanage {
   id: number;
   name: string;
+  whatsapp: string;
   latitude: number;
   longitude: number;
   about: string;
@@ -44,6 +45,10 @@ export default function OrphanageDetails() {
 
   function handleGoogleMapRoutes() {
     Linking.openURL(`https://www.google.com/maps/dir/?api=1&destination=${orphanage?.latitude},${orphanage?.longitude}`)
+  }
+
+  function sendWhatsapp(orphanage: Orphanage) {
+    Linking.openURL(`whatsapp://send?phone=55${orphanage.whatsapp}`);
   }
 
   useEffect(() => {
@@ -137,7 +142,7 @@ export default function OrphanageDetails() {
           )}
         </View>
 
-        <RectButton style={styles.contactButton} onPress={() => {}}>
+        <RectButton style={styles.contactButton} onPress={() => sendWhatsapp(orphanage)}>
           <FontAwesome name="whatsapp" size={24} color="#FFF" />
           <Text style={styles.contactButtonText}>Entrar em contato</Text>
         </RectButton>

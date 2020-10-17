@@ -32,6 +32,7 @@ export default {
   async create(req: Request, res: Response) {
     const {
       name,
+      whatsapp,
       latitude,
       longitude,
       about,
@@ -50,17 +51,19 @@ export default {
 
     const data = {
       name,
+      whatsapp,
       latitude,
       longitude,
       about,
       instructions,
       opening_hours,
-      open_on_weekends: open_on_weekends === 'true',
+      open_on_weekends: open_on_weekends === "true",
       images,
     };
 
     const schema = Yup.object().shape({
       name: Yup.string().required("Informação obrigatória"),
+      whatsapp: Yup.string().required("Informação obrigatória").max(11),
       latitude: Yup.number().required("Informação obrigatória"),
       longitude: Yup.number().required("Informação obrigatória"),
       about: Yup.string().required("Informação obrigatória").max(300),
@@ -74,11 +77,8 @@ export default {
       ),
     });
 
-    const finalData = schema.cast(data);
-
     await schema.validate(data, {
       abortEarly: false,
-
     });
 
     const orphanage = orphanagesRepository.create(data);
